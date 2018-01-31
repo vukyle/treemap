@@ -1,0 +1,228 @@
+[
+{
+"id":1
+,"first_name":"Lucifer"
+,"last_name":"Bartosz"
+,"office":"Arup New York"
+,"phone":"2126096504"
+,"team":"QA/QC"
+,"role":"QA/QC Manager"
+,"supervisor_id":18
+,"email":"lucifer.bartosz@arup.com"
+}
+,{
+"id":2
+,"first_name":"Susanna"
+,"last_name":"Puig"
+,"office":"Arup Boston"
+,"phone":"6177269011"
+,"team":"BIM"
+,"role":"BIM Manager"
+,"supervisor_id":11
+,"email":"susanna.puig@arup.com"
+}
+,{
+"id":3
+,"first_name":"Candi"
+,"last_name":"Chandler"
+,"office":"Arup New York"
+,"phone":"7184898963"
+,"team":"Value Engineering"
+,"role":"Senior Engineer"
+,"supervisor_id":18
+,"email":"candi.chandler@arup.com"
+,"photo":"https://www.goodfreephotos.com/people/beautiful-woman-in-pink-dress-in-flowers.jpg.php"
+}
+,{
+"id":4
+,"first_name":"Wen"
+,"last_name":"Wong"
+,"office":"Arup San Francisco"
+,"phone":"4154331153"
+,"team":"Security"
+,"role":"Associate"
+,"supervisor_id":11
+,"email":"wen.wong@arup.com"
+}
+,{
+"id":5
+,"first_name":"Christina"
+,"last_name":"Elliston"
+,"office":"Arup London"
+,"phone":"+44 7856 231936"
+,"team":"Façade Engineering"
+,"role":"Engineer"
+,"supervisor_id":11
+,"email":"christina.elliston@arup.com"
+,"photo":"https://www.goodfreephotos.com/people/pretty-girl-with-crown-of-white-flowers.jpg.php"
+}
+,{
+"id":6
+,"first_name":"Robin"
+,"last_name":"Stanford"
+,"office":"Arup San Francisco"
+,"phone":"4159330502"
+,"team":"Security"
+,"role":"Senior Engineer"
+,"supervisor_id":4
+,"email":"robin.stanford@arup.com"
+}
+,{
+"id":7
+,"first_name":"Urvi"
+,"last_name":"Winterbottom"
+,"office":"Arup New York"
+,"phone":"9292247310"
+,"team":"Architecture"
+,"role":"Graduate Architect"
+,"supervisor_id":19
+,"email":"urvi.winterbottom@arup.com"
+}
+,{
+"id":8
+,"first_name":"Alis"
+,"last_name":"Merrick"
+,"office":"Arup New York"
+,"phone":"9174785719"
+,"team":"Project Management"
+,"role":"Project Director"
+,"email":"alis.merrick@arup.com"
+,"photo":"https://www.goodfreephotos.com/people/woman-staring-and-thinking.jpg.php"
+}
+,{
+"id":9
+,"first_name":"Lilian"
+,"last_name":"Willis"
+,"office":"Arup New Jersey"
+,"phone":"9736608318"
+,"team":"Structural Engineering"
+,"role":"Engineer"
+,"supervisor_id":11
+,"email":"lilian.willis@arup.com"
+}
+,{
+"id":10
+,"first_name":"Mathilde"
+,"last_name":"Townsend"
+,"office":"Arup New York"
+,"phone":"9174466117"
+,"team":"Security"
+,"role":"Graduate Engineer"
+,"supervisor_id":6
+,"email":"mathilde.townsend@arup.com"
+,"photo":"https://www.goodfreephotos.com/people/woman-recording-a-song-playing-a-guitar.jpg.php"
+}
+,{
+"id":11
+,"first_name":"Silvia"
+,"last_name":"Carter"
+,"office":"Arup New York"
+,"phone":"6462913773"
+,"team":"Delivery Manager"
+,"role":"Associate"
+,"supervisor_id":18
+,"email":"silvia.carter@arup.com"
+}
+,{
+"id":12
+,"first_name":"Josefine"
+,"last_name":"Bourke"
+,"office":"Arup New York"
+,"phone":"8453382578"
+,"team":"Document Controls"
+,"role":"Consultant"
+,"supervisor_id":11
+,"email":"josefine.bourke@arup.com"
+}
+,{
+"id":13
+,"first_name":"Herbie"
+,"last_name":"Howse"
+,"office":"Arup Boston"
+,"phone":"6179333729"
+,"team":"Architecture"
+,"role":"Team Leader"
+,"supervisor_id":18
+,"email":"herbie.howse@arup.com"
+,"photo":"https://www.goodfreephotos.com/egypt/other-egypt/muhammad-ali-pasha-and-first-khedive-egypt.jpg.php"
+}
+,{
+"id":14
+,"first_name":"Jacqui"
+,"last_name":"Milburn"
+,"office":"Arup New York"
+,"phone":"8453979570"
+,"team":"Plumbing Engineering"
+,"role":"Graduate Engineer"
+,"supervisor_id":20
+,"email":"jacqui.milburn@arup.com"
+}
+,{
+"id":15
+,"first_name":"Crispin"
+,"last_name":"Samson"
+,"office":"Arup New York"
+,"phone":"7164330755"
+,"team":"BIM"
+,"role":"CAD Operator"
+,"supervisor_id":2
+,"email":"crispin.samson@arup.com"
+,"photo":"https://www.goodfreephotos.com/sri-lanka/local-trumpet-player-in-sri-lanka.jpg.php"
+}
+,{
+"id":16
+,"first_name":"Winnifred"
+,"last_name":"Huxtable"
+,"office":"Arup New York"
+,"phone":"3158056694"
+,"team":"Architecture"
+,"role":"Senior Architect"
+,"supervisor_id":13
+,"email":"winnifred.huxtable@arup.com"
+}
+,{
+"id":17
+,"first_name":"Laurel"
+,"last_name":"Rains"
+,"office":"Arup New York"
+,"phone":"2129258462"
+,"team":"BIM"
+,"role":"CAD Intern"
+,"supervisor_id":15
+,"email":"laurel.rains@arup.com"
+}
+,{
+"id":18
+,"first_name":"Chris"
+,"last_name":"Hayden"
+,"office":"Arup San Francisco"
+,"phone":"4156818519"
+,"team":"Project Management"
+,"role":"Project Manager"
+,"supervisor_id":8
+,"email":"chris.hayden@arup.com"
+,"photo":"https://www.goodfreephotos.com/bangladesh/dhaka/person-sitting-in-front-of-the-dhaka-bangladesh.jpg.php"
+}
+,{
+"id":19
+,"first_name":"Symphony"
+,"last_name":"Henry"
+,"office":"Arup New York"
+,"phone":"5859441095"
+,"team":"Architecture"
+,"role":"Architect"
+,"supervisor_id":13
+,"email":"symphony.henry@arup.com"
+}
+,{
+"id":20
+,"first_name":"Tawnie"
+,"last_name":"Elwes"
+,"office":"Arup Chicago"
+,"phone":"3127078439"
+,"team":"Plumbing Engineering"
+,"role":"Senior Engineer"
+,"supervisor_id":11
+,"email":"tawnie.elwes@arup.com"
+}
+]
