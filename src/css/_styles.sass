@@ -2,96 +2,24 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans')
 
 $text-color: #000000
-$grey: #d3d3d3
-$open-sans: 'Open Sans', sans-serif
+$magenta: #D12E7C
+$red: #F15A22
+$orange: #F99D1C
+$green: #06AB71
+$blue: #27AAE1
+$purple: #6B6EB3
+$grey: #808285
+$default-font: 'Times New Roman', sans-serif
 
 html
-    font-family: myriad, sans-serif
+    font-family: $default-font
     color: $text-color
 h1, h2, h3, h4, h5, p, a
     margin: 0
     padding: 0
-h1
-    font-family: 'Open Sans', sans-serif
 
 .container
     margin: 0 auto
-    max-width: 770px
 
-.nav
-    font-size: 24 /16 * 1em
-    width: 100%
-    height: 50px
-    border: none
-    text-align: left
-    backgroung-color: $grey
-    margin: 0 0 1px 0
-    display: flex
-    justify-content: space-between
-    &--active
-        background-color: #000000
-        color: #ffffff
-.expand-button
-    display: none
-    &--active
-        display: block
-.close-button
-    display: none
-    &--active
-        display: block
-
-.tab1
-    display: none
-    grid-template-columns: 1fr
-    margin: 20px 0 0 0
-    &__img-placeholder
-        width: 100%
-        height: 170px
-        background-color: black
-        margin: 15px 0
-    &__subtitle
-        grid-row: 1/2
-        font-size: 42.39 / 16 * 1em
-    &__paragraph
-        grid-row: 2/3
-.tab1.active
-    display: grid
-
-.tab2
-    display: none
-    flex-wrap: wrap
-    justify-content: flex-start
-    &__h1
-        font-size: 42.39 / 16 * 1em
-        margin: 10px 0
-    &__p
-        text-align: left
-        margin: 0 0 20px 0
-.tab2.active
-    display: flex
-
-.tab3
-    width: 100%
-    display: none
-    flex-wrap: wrap
-    justify-content: center
-    margin: 30px 0 0 0
-    &__title
-        width: 100%
-        display: flex
-        justify-content: space-between
-        font-family: $open-sans
-        font-size: 31.1 / 16 * 1em
-        font-weight: 700
-        margin: 0 5px
-        line-height: 90%
-
-    &__img-placeholder
-        width: 100%
-        height: 200px
-        background-color: #000000
-        margin: 20px 0 0 0
-    &__p
-        margin: 35px 0 0 0
-.tab3.active
-    display: flex
+.team__header
+    text-align: center
