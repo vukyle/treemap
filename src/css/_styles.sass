@@ -1,5 +1,5 @@
 //FONT
-@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
 
 $text-color: #000000
 $magenta: #D12E7C
@@ -13,13 +13,21 @@ $default-font: 'Times New Roman', sans-serif
 
 html
     font-family: $default-font
-    color: $text-color
+    color: $grey
 h1, h2, h3, h4, h5, p, a
     margin: 0
     padding: 0
+    color: #000000
 
 .container
     margin: 0 auto
 
-.team__header
-    text-align: center
+.team
+    &__container
+        text-align: center
+    &__header
+        text-align: center
+        display: inline-block
+        border-bottom: 3px solid $magenta
+    &__email
+        color: $magenta

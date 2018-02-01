@@ -8,21 +8,17 @@ const axios = require('axios');
     function importData() {
         return axios.get('../data/people.json')
         .then(function(response) {
-            //console.log(response.data[1].team);
             const data = response.data;
-            //console.log(response.data);
             return data;
         })
         .catch(function(error) {
             console.log(error);
         });
-        //return axios.get('../data/people.json');
     }
 
-    //Tree map component
-    const TreeMap = {
+    //responsible for creating the DOM elements that make up the chart
+    const chart = {
         createHeaderComponent: function(result) {
-            //console.log(result);
             const container = document.querySelector('#container');
             const teamArray = createTeamArray(result);
             function createTeamArray(data) {
@@ -34,29 +30,67 @@ const axios = require('axios');
                         }
                     }
                 });
-                //console.log(result);
                 return result;
             }
             function createTeamDiv(input) {
                 const teamContainer = document.createElement("DIV");
-                const teamDiv = document.createElement("DIV");
+                const teamDiv = document.createElement("H2");
+                const ul = document.createElement("UL");
 
                 teamContainer.className = 'team__container';
+                teamContainer.id  = input;
                 teamDiv.className = 'team__header';
                 teamDiv.textContent = input;
+
                 teamContainer.appendChild(teamDiv);
                 return teamContainer;
             }
 
             for(let i = 0; i < teamArray.length; i++) {
-                //console.log(teamArray[i]);
                 container.appendChild(createTeamDiv(teamArray[i]));
             }
-            //console.log(teamArray);
         },
         createProfile: function(data) {
-            console.log(data);
+            const teamData = this.organizeIntoTeams(data);
+            function teamContainer(id) {
+                return document.getElementById(id);
+            }
+
+            function createName(firstName, lastName) {
+                const h4 = document.createElement("H4");
+                h4.className = 'team__h4';
+                h4.textContent = firstName + ' ' + lastName;
+                return h4;
+            }
+
+            function createList(input) {
+                const listItem = document.createElement("LI");
+                listItem.textContent = input;
+                return listItem;
+            }
+
+            function createEmail(input) {
+                const email = document.createElement("A");
+                email.textContent = input;
+                email.href = 'mailto:' + input;
+                email.className = 'team__email';
+                return email;
+            }
+
+            for (var property in teamData) {
+                for (let i = 0; i < teamData[property].length; i++) {
+                    const profile = document.createElement("UL");
+
+                    profile.appendChild(createName(teamData[property][i].first_name, teamData[property][i].last_name));
+                    profile.appendChild(createList(teamData[property][i].role));
+                    profile.appendChild(createEmail(teamData[property][i].email));
+                    profile.appendChild(createList(teamData[property][i].phone));
+                    teamContainer(property).appendChild(profile);
+                }
+            }
         },
+
+        //returns data organized by teams
         organizeIntoTeams: function(data) {
             const teamObj = {};
             const team = createTeamArray(data);
@@ -76,35 +110,21 @@ const axios = require('axios');
             });
             for (let i = 0; i < data.length; i++){
                 for (let property in teamObj) {
-                    //console.log(teamObj[property]);
                     if (property === data[i].team) {
                         teamObj[property].push(data[i]);
                     }
                 }
             }
-            // for (let property in teamObj) {
-            //     console.log(teamObj[property]);
-            // }
-            console.log(teamObj);
-            console.log(team);
-            // const data = importData();
-            // data.then((result) => {
-            //
-            // });
+            return teamObj;
         },
+        //Renders the components to be viewed on the browser
         render: function() {
             const data = importData();
-            //console.log(data);
             data.then((result) => {
-                //console.log(result[1].team);
-                // result.forEach(function(element, index) {
-                //     console.log(element.team);
-                // });
                 this.createHeaderComponent(result);
                 this.createProfile(result);
-                this.organizeIntoTeams(result);
             });
         }
     };
-    TreeMap.render();
+    chart.render();
 })();
