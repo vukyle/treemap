@@ -1,7 +1,7 @@
 {
-  "name": "centerfield",
+  "name": "char",
   "version": "1.0.0",
-  "description": "centerfield",
+  "description": "chart",
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
